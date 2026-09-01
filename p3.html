@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -85,7 +85,7 @@
 
         function calculateMarks() {
 
-            // Get values from input fields
+        
             let name = document.getElementById("name").value;
 
             let sub1 = Number(document.getElementById("sub1").value);
@@ -94,13 +94,13 @@
             let sub4 = Number(document.getElementById("sub4").value);
             let sub5 = Number(document.getElementById("sub5").value);
 
-            // Calculate total
+            
             let total = sub1 + sub2 + sub3 + sub4 + sub5;
 
-            // Calculate percentage
+            
             let percentage = total / 5;
 
-            // Find grade
+            
             let grade;
 
             if (percentage >= 90) {
@@ -122,7 +122,7 @@
                 grade = "F";
             }
 
-            // Check pass or fail
+            
             let status;
 
             if (percentage >= 40) {
@@ -132,7 +132,7 @@
                 status = "FAIL";
             }
 
-            // Display result
+            
             document.getElementById("result").innerHTML =
                 "<b>Student Name:</b> " + name + "<br>" +
                 "<b>Total Marks:</b> " + total + " / 500<br>" +
@@ -145,4 +145,3 @@
 
 </body>
 </html>
-```
